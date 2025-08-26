@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Temperature Finder — Get Temperature of Any Location</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+<div class="card">
+<h1>🌡️ Temperature Finder — Get Temperature of Any Location</h1>
+<p class="sub">Enter a city or location name (e.g., <em>Patna</em>, <em>Mumbai</em>, <em>New York</em>) to see the temperature below.</p>
+
+
+<div class="row">
+<input id="place" type="text" placeholder="Enter location… (e.g., Patna, Bihar, India)" />
+<button id="searchBtn" class="primary">Show Temperature</button>
+<button id="geoBtn" class="ghost">📍 My Location</button>
+</div>
+
+
+<div class="chips">
+<span class="chip" data-q="Delhi">Delhi</span>
+<span class="chip" data-q="Patna">Patna</span>
+<span class="chip" data-q="Mumbai">Mumbai</span>
+<span class="chip" data-q="Kolkata">Kolkata</span>
+<span class="chip" data-q="Bengaluru">Bengaluru</span>
+<span class="chip" data-q="New York">New York</span>
+<span class="chip" data-q="Tokyo">Tokyo</span>
+</div>
+
+
+<div id="output" class="result small">Result will appear here…</div>
+
+
+<p class="footer">Data sourced from <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">Open‑Meteo</a>.</p>
+</div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

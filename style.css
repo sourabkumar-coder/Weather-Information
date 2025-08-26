@@ -1,0 +1,23 @@
+:root { --bg:#0f172a; --card:#111827; --muted:#94a3b8; --text:#e5e7eb; --accent:#22c55e; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans"; background: linear-gradient(150deg,#0b1025,#0f172a 40%,#020617); color: var(--text); }
+.container { max-width: 700px; margin: 4rem auto; padding: 1.25rem; }
+.card { background: rgba(17,24,39,.75); backdrop-filter: blur(8px); border: 1px solid rgba(148,163,184,.15); border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,.4); padding: 1.5rem; }
+h1 { font-size: clamp(1.4rem, 2.5vw, 2rem); margin: 0 0 1rem; }
+p.sub { color: var(--muted); margin-top: .25rem; }
+.row { display:flex; gap:.75rem; flex-wrap:wrap; margin-top:1rem; }
+input[type="text"] { flex:1 1 320px; padding: .9rem 1rem; background:#0b1220; border:1px solid rgba(148,163,184,.25); border-radius: 12px; color:var(--text); outline:none; }
+input[type="text"]:focus { border-color:#60a5fa; box-shadow: 0 0 0 4px rgba(59,130,246,.2); }
+button { padding:.85rem 1.1rem; border:1px solid rgba(148,163,184,.25); background:#0b1220; color:var(--text); border-radius:12px; cursor:pointer; }
+button.primary { background: linear-gradient(135deg,#22c55e,#16a34a); border-color: transparent; font-weight: 600; }
+button.ghost { background: transparent; }
+button:disabled { opacity:.6; cursor:not-allowed; }
+.chips { display:flex; gap:.5rem; flex-wrap:wrap; margin-top:.75rem; }
+.chip { padding:.4rem .7rem; border-radius:999px; border:1px solid rgba(148,163,184,.25); cursor:pointer; font-size:.9rem; color:var(--muted); }
+.result { margin-top:1.25rem; padding:1rem; border-radius:16px; border:1px dashed rgba(148,163,184,.25); min-height: 84px; display:flex; align-items:center; }
+.temp { font-size: clamp(2.2rem,5vw,3rem); font-weight:700; }
+.meta { color: var(--muted); margin-top:.2rem; }
+.loader { width:20px; height:20px; border-radius:50%; border:3px solid rgba(148,163,184,.2); border-top-color:#22c55e; animation: spin 1s linear infinite; display:inline-block; vertical-align: middle; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.footer { text-align:center; color:var(--muted); font-size:.9rem; margin-top:1rem; }
+.small { font-size:.9rem; color:var(--muted); }
